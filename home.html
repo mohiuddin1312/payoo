@@ -16,7 +16,7 @@
     <main class="flex justify-center">
       <!-- start -->
       <div class="hero min-h-screen w-[450px] h-[958px] bg-green-400">
-        <div class="hero-content flex-col lg:flex-row-reverse">
+        <div class="">
           <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <div class="stat bg-orange-200">
                   <div id="accound-balance" class="stat-value">9400</div>
@@ -31,7 +31,7 @@
             </div>
             <div class="divider"></div>
             <!-- add money form start -->
-            <div class="card-body">
+            <div class="card-body hidden">
               <fieldset class="fieldset">
                 <label class="">Amount</label>
                 <input
@@ -54,11 +54,37 @@
               </fieldset>
             </div>
             <!-- add money form end -->
+             <!-- cash Out Start -->
+             <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="">Amount</label>
+                <input
+                  id="input-cash-out"
+                  type="text"
+                  class="input"
+                  placeholder="Cash Out Money"
+                />
+                <label class="fieldset-label">Pin</label>
+                <input
+                  id="input-pinNumber"
+                  type="password"
+                  class="input"
+                  outocomplete="off"
+                  placeholder="Pin Number"
+                />
+                <button id="btn-cash-out" class="btn btn-neutral mt-4">
+                  Cash Out
+                </button>
+              </fieldset>
+            </div>
+              <!-- cash Out End -->
           </div>
         </div>
       </div>
       <!-- end -->
     </main>
-    <script src="js/home.js"></script>
+    <!-- <script src="js/home.js"></script> -->
+     <script src="js/addMoney.js"></script>
+     <script src="js/cashOut.js"></script>
   </body>
 </html>
